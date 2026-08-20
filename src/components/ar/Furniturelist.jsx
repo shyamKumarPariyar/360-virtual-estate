@@ -50,7 +50,7 @@ export default function FurnitureList({ onEvent, filter, allowResize = false }) 
 					ready={ready}
 					allowResize={allowResize}
 					onEvent={onEvent}
-				/>		
+				/>
 			))}
 		</ScrollRail>
 		</div>
