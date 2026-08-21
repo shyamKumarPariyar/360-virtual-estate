@@ -1,3 +1,4 @@
+const ASSETS_BASE_URL = 'https://0wfkngdk2n2xmwck.public.blob.vercel-storage.com'
 export const TOUR_CONFIG = {
     1: {
         default: {
@@ -10,7 +11,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/Living_1.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Living_1.jpg",
                 hotSpots: [
                     {
                         pitch: -22,
@@ -74,7 +75,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/Bedroom1_1.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Bedroom1_1.jpg",
                 hotSpots: [
                     {
                         pitch: -2,
@@ -120,7 +121,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/Bedroom2_1.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Bedroom2_1.jpg",
                 hotSpots: [
                     {
                         pitch: 10,
@@ -160,7 +161,7 @@ export const TOUR_CONFIG = {
                 pitch: -2,
                 yaw: -35,
                 type: "equirectangular",
-                panorama: "/rendered/Passage_1.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Passage_1.jpg",
                 hotSpots: [
                     {
                         pitch: -2,
@@ -221,7 +222,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/Toilet.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Toilet.jpg",
                 hotSpots: [
                     {
                         pitch: 10,
@@ -251,7 +252,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/Bathroom.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/Bathroom.jpg",
                 hotSpots: [
                     {
                         pitch: 10,
@@ -288,7 +289,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/corporate_apartment.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/corporate_apartment.jpg",
                 hotSpots: [
                     {
                         pitch: 3,
@@ -311,7 +312,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/modern_apartment.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/modern_apartment.jpg",
                 hotSpots: [
                     {
                         pitch: -3,
@@ -334,7 +335,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: "/rendered/tiny_apartement.jpg",
+                panorama: ASSETS_BASE_URL+"/rendered/tiny_apartement.jpg",
                 hotSpots: [
                     {
                         pitch: 3,
