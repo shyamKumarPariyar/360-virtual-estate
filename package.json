@@ -1,10 +1,8 @@
 {
-  "name": "immersive-platform-dissertation",
+  "name": "360-virtualestate-immersive-platform",
   "private": true,
   "version": "0.0.0",
-  "engines": {
-    "node": ">=22"
-  },
+
   "type": "module",
   "scripts": {
     "dev": "vite",
