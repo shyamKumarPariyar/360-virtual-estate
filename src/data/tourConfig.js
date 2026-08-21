@@ -7,7 +7,7 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -21,7 +21,7 @@ export const TOUR_CONFIG = {
                         sceneId: "passage",
                         targetYaw: -34,
                         targetPitch: -2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     // {
                     //     pitch: -3,
@@ -31,7 +31,7 @@ export const TOUR_CONFIG = {
                     //     sceneId: "bedroom1",
                     //     targetYaw: -41,
                     //     targetPitch: -2.2,
-                    //     targetHfov: 115
+                    //     targetHfov: 70
                     // },
                     // {
                     //     pitch: -4,
@@ -41,7 +41,7 @@ export const TOUR_CONFIG = {
                     //     sceneId: "bedroom2",
                     //     targetYaw: -3,
                     //     targetPitch: -6,
-                    //     targetHfov: 115
+                    //     targetHfov: 70
                     // },
                     {
                         pitch: -1,
@@ -63,7 +63,7 @@ export const TOUR_CONFIG = {
                     },
                     {
                         pitch: -3,
-                        yaw: 150,
+                        yaw: 170,
                         type: "info",
                         text: "Kitchen Area",
                     },
@@ -71,7 +71,7 @@ export const TOUR_CONFIG = {
             },
             bedroom1: {
                 title: "Bedroom 1",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -79,13 +79,13 @@ export const TOUR_CONFIG = {
                 hotSpots: [
                     {
                         pitch: -2,
-                        yaw: -90,
+                        yaw: -70,
                         type: "scene",
                         text: "Back to Living Room",
                         sceneId: "livingRoom",
                         targetYaw: 16,
                         targetPitch: 1.1,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -32,
@@ -95,17 +95,17 @@ export const TOUR_CONFIG = {
                         sceneId: "passage",
                         targetYaw: -34,
                         targetPitch: -2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -2,
-                        yaw: 90,
+                        yaw: 70,
                         type: "scene",
                         text: "Go to Bedroom 2",
                         sceneId: "bedroom2",
                         targetYaw: -1,
                         targetPitch:4,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: 8,
@@ -117,7 +117,7 @@ export const TOUR_CONFIG = {
             },
             bedroom2: {
                 title: "Bedroom 2",
-                hfov: 115,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -131,7 +131,7 @@ export const TOUR_CONFIG = {
                         sceneId: "livingRoom",
                         targetYaw: 16,
                         targetPitch: 1.1,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -62,
@@ -141,7 +141,7 @@ export const TOUR_CONFIG = {
                         sceneId: "passage",
                         targetYaw: -34,
                         targetPitch: -2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -3,
@@ -151,13 +151,13 @@ export const TOUR_CONFIG = {
                         sceneId: "bedroom1",
                         targetYaw: -41,
                         targetPitch: -2.2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                 ],
             },
             passage: {
                 title: "Passage",
-                hfov: 120,
+                hfov: 70,
                 pitch: -2,
                 yaw: -35,
                 type: "equirectangular",
@@ -171,7 +171,7 @@ export const TOUR_CONFIG = {
                         sceneId: "livingRoom",
                         targetYaw: 16,
                         targetPitch: 1.1,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -3,
@@ -181,7 +181,7 @@ export const TOUR_CONFIG = {
                         sceneId: "bedroom1",
                         targetYaw: -41,
                         targetPitch: -2.2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -4,
@@ -191,7 +191,7 @@ export const TOUR_CONFIG = {
                         sceneId: "bedroom2",
                         targetYaw: -1,
                         targetPitch:4,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
 
                     {
@@ -202,7 +202,7 @@ export const TOUR_CONFIG = {
                         sceneId: "toilet",
                         targetYaw: 102,
                         targetPitch: -1.8,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -5,
@@ -212,13 +212,13 @@ export const TOUR_CONFIG = {
                         sceneId: "bathroom",
                         targetYaw: 36,
                         targetPitch: -5,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                 ],
             },
             toilet: {
                 title: "Toilet",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -232,7 +232,7 @@ export const TOUR_CONFIG = {
                         sceneId: "livingRoom",
                         targetYaw: 16,
                         targetPitch: 1.1,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -41,
@@ -242,13 +242,13 @@ export const TOUR_CONFIG = {
                         sceneId: "passage",
                         targetYaw: -34,
                         targetPitch: -2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                 ],
             },
             bathroom: {
                 title: "Bathroom",
-                hfov: 100,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -262,7 +262,7 @@ export const TOUR_CONFIG = {
                         sceneId: "livingRoom",
                         targetYaw: 16,
                         targetPitch: 1.1,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                     {
                         pitch: -31,
@@ -272,7 +272,7 @@ export const TOUR_CONFIG = {
                         sceneId: "passage",
                         targetYaw: -34,
                         targetPitch: -2,
-                        targetHfov: 115
+                        targetHfov: 70
                     },
                 ],
             },
@@ -285,19 +285,19 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
                 panorama: ASSETS_BASE_URL+"/rendered/corporate_apartment.jpg",
-                hotSpots: [
-                    {
-                        pitch: 3,
-                        yaw: 50,
-                        type: "info",
-                        text: "Spaced Corporate Appartement",
-                    },
-                ],
+                // hotSpots: [
+                //     {
+                //         pitch: 3,
+                //         yaw: 70,
+                //         type: "info",
+                //         text: "Spaced Corporate Appartement",
+                //     },
+                // ],
             }
         }
     },
@@ -308,7 +308,7 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -331,7 +331,7 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -339,7 +339,7 @@ export const TOUR_CONFIG = {
                 hotSpots: [
                     {
                         pitch: 3,
-                        yaw: 50,
+                        yaw: 70,
                         type: "info",
                         text: "Tiny and cozy Appartement",
                     },
@@ -354,7 +354,7 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -362,7 +362,7 @@ export const TOUR_CONFIG = {
                 hotSpots: [
                     {
                         pitch: -3,
-                        yaw: 150,
+                        yaw: 170,
                         type: "info",
                         text: "Snooker",
                     },
@@ -377,7 +377,7 @@ export const TOUR_CONFIG = {
         scenes: {
             livingRoom: {
                 title: "Living Room",
-                hfov: 120,
+                hfov: 70,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
@@ -385,7 +385,7 @@ export const TOUR_CONFIG = {
                 hotSpots: [
                     {
                         pitch: -3,
-                        yaw: 150,
+                        yaw: 170,
                         type: "info",
                         text: "Kitchen Area",
                     },

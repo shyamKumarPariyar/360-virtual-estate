@@ -14,7 +14,7 @@ const VirtualTour360 = () => {
 
     const [loaded, setLoaded] = useState(false);
     const [currentSceneId, setCurrentSceneId] = useState(firstScene);
-    const [entryView, setEntryView] = useState({ pitch: 0, yaw: 0, hfov: 100 });
+    const [entryView, setEntryView] = useState({ pitch: 0, yaw: 0, hfov: 70 });
 
     const handleNavigate = useCallback((sceneId, targetPitch, targetYaw, targetHfov) => {
         setLoaded(false); 
@@ -22,7 +22,7 @@ const VirtualTour360 = () => {
         setEntryView({
             pitch: typeof targetPitch === "number" ? targetPitch : 0,
             yaw: typeof targetYaw === "number" ? targetYaw : 0,
-            hfov:  typeof targetHfov  === 'number' ? targetHfov  : 100,
+            hfov:  typeof targetHfov  === 'number' ? targetHfov  : 70,
         });
     }, []);
 
