@@ -56,10 +56,10 @@ export default function FurnitureCard({ item, ready, allowResize = false, onEven
 		el.addEventListener('ar-status', onARStatus);
 
 		return () => {
-		el.removeEventListener('load', onLoad);
-		el.removeEventListener('error', onError);
-		el.removeEventListener('ar-status', onARStatus);
-		if (poll) clearInterval(poll);
+			el.removeEventListener('load', onLoad);
+			el.removeEventListener('error', onError);
+			el.removeEventListener('ar-status', onARStatus);
+			if (poll) clearInterval(poll);
 		};
 	}, [ready, item.glb, emit]);
 
