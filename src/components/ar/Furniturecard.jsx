@@ -80,7 +80,7 @@ export default function FurnitureCard({ item, ready, allowResize = false, onEven
 				alt={item.name}
 				ar
 				ar-modes="webxr scene-viewer quick-look"
-				ar-scale={allowResize ? 'auto' : 'fixed'}
+				ar-scale={'fixed'}
 				ar-placement={item.placement ?? 'floor'}
 				camera-controls
 				touch-action="pan-y"
