@@ -9,16 +9,18 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/apartment_1.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
+		scale: '0.7 0.7 0.7'
 	},
 	{
-		id: 'simple-house-kitchen',
+		id: 'cozy-livving-room',
 		name: 'Cozy Living Room',
 		category: 'Housing',
 		thumbnail: ASSETS_BASE_URL+'/thumbs/cozy_modern_living_room.png',
-		glb: ASSETS_BASE_URL+'/models/cozy_modern_living_room.glb',
-		usdz: ASSETS_BASE_URL+'/usdz/cozy_modern_living_room.usdz',
+		glb: ASSETS_BASE_URL+'/models/cozy_modern_living_room_1.glb',
+		usdz: ASSETS_BASE_URL+'/usdz/cozy_modern_living_room_1.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
+		scale: '0.5 0.5 0.5'
 	},
 	{
 		id: 'dining-table',
@@ -29,6 +31,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/modern_dining_table.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
+		scale: '1 1 1'
 	},
 	{
 		id: 'living-room',
@@ -39,6 +42,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/interior_4_living_room_kitchen.usdz',
 		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
 		placement: 'floor',
+		scale: '0.85 0.85 0.85'
 	},
 	{
 		id: 'gaming-chair',
@@ -49,6 +53,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/gaming_chair.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
+		scale: '1 1 1'
 	},
 	{
 		id: 'double_sofa',
@@ -59,6 +64,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/double_sofa.usdz',
 		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
 		placement: 'floor',
+		scale: '1 1 1'
 	},
 	{
 		id: 'simple-kitchen',
@@ -69,6 +75,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/simple_house_kitchen.usdz',
 		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
 		placement: 'floor',
+		scale: '0.45 0.45 0.45'
 	},
 	{
 		id: 'loft-living-room',
@@ -79,6 +86,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/loft_13_living_room_interior.usdz',
 		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
 		placement: 'floor',
+		scale: '1 1 1'
 	},
 	{
 		id: 'matrix-chair',
@@ -89,6 +97,7 @@ export const MODELS = [
 		usdz: ASSETS_BASE_URL+'/usdz/the_matrix_chair.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
+		scale: '0.9 0.9 0.9'
 	}
 ];
 

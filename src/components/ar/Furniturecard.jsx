@@ -78,6 +78,7 @@ export default function FurnitureCard({ item, ready, allowResize = false, onEven
 				ios-src={item.usdz}
 				poster={item.thumbnail}
 				alt={item.name}
+				scale= {item.scale}
 				ar
 				ar-modes="webxr scene-viewer quick-look"
 				ar-scale={'fixed'}
