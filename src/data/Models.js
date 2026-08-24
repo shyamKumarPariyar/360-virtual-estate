@@ -11,17 +11,17 @@ export const MODELS = [
 		placement: 'floor',
 		scale: '0.7 0.7 0.7'
 	},
-	{
-		id: 'cozy-livving-room',
-		name: 'Cozy Living Room',
-		category: 'Housing',
-		thumbnail: ASSETS_BASE_URL+'/thumbs/cozy_modern_living_room.png',
-		glb: ASSETS_BASE_URL+'/models/cozy_modern_living_room_1.glb',
-		usdz: ASSETS_BASE_URL+'/usdz/cozy_modern_living_room_1.usdz',
-		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
-		placement: 'floor',
-		scale: '0.5 0.5 0.5'
-	},
+	// {
+	// 	id: 'cozy-livving-room',
+	// 	name: 'Cozy Living Room',
+	// 	category: 'Housing',
+	// 	thumbnail: ASSETS_BASE_URL+'/thumbs/cozy_modern_living_room.png',
+	// 	glb: ASSETS_BASE_URL+'/models/cozy_modern_living_room_1.glb',
+	// 	usdz: ASSETS_BASE_URL+'/usdz/cozy_modern_living_room_1.usdz',
+	// 	dimensions: { w: 2.1, d: 0.9, h: 0.85 },
+	// 	placement: 'floor',
+	// 	scale: '0.5 0.5 0.5'
+	// },
 	{
 		id: 'dining-table',
 		name: 'Modern Dining table',
