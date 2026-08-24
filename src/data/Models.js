@@ -1,4 +1,4 @@
-const ASSETS_BASE_URL = 'https://0wfkngdk2n2xmwck.public.blob.vercel-storage.com'
+const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com'
 export const MODELS = [
 	{
 		id: 'appartement',

@@ -1,4 +1,5 @@
-const ASSETS_BASE_URL = 'https://0wfkngdk2n2xmwck.public.blob.vercel-storage.com'
+// const ASSETS_BASE_URL = 'https://0wfkngdk2n2xmwck.public.blob.vercel-storage.com'
+const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com'
 
 export const modules = [
     { id: "tour", link: '/property/1', tag: "360°", title: "Virtual Tours", body: "Walk every room at your own pace, before you book a viewing.", cta: "Browse tours" },
