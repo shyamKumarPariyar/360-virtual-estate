@@ -80,15 +80,21 @@ export default function FurnitureCard({ item, ready, allowResize = false, onEven
 				alt={item.name}
 				scale= {item.scale}
 				ar
-				ar-modes="webxr scene-viewer quick-look"
-				ar-scale={'fixed'}
-				ar-placement={item.placement ?? 'floor'}
+				ar-modes="webxr quick-look"
+				ar-placement="floor"
+				ar-scale="fixed"
+
 				camera-controls
 				touch-action="pan-y"
+
 				shadow-intensity="1"
+				shadow-softness="0.8"
+
+				exposure="1"
 				environment-image="neutral"
-				loading="lazy"
-				reveal="auto"
+
+				interaction-prompt="auto"
+				loading="eager"
 				style={{ width: '100%', height: '100%', backgroundColor: 'transparent' }}
 			>
 				<div slot="ar-button" style={{ display: 'none' }} />
