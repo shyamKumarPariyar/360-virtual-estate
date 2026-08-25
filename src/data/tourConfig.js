@@ -11,7 +11,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Living_1.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Living_1.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: -20,
@@ -23,26 +23,6 @@ export const TOUR_CONFIG = {
                         targetPitch: -2,
                         targetHfov: 80
                     },
-                    // {
-                    //     pitch: -3,
-                    //     yaw: -60,
-                    //     type: "scene",
-                    //     text: "Go to Bedroom 1",
-                    //     sceneId: "bedroom1",
-                    //     targetYaw: -41,
-                    //     targetPitch: -2.2,
-                    //     targetHfov: 80
-                    // },
-                    // {
-                    //     pitch: -4,
-                    //     yaw: -80,
-                    //     type: "scene",
-                    //     text: "Go to Bedroom 2",
-                    //     sceneId: "bedroom2",
-                    //     targetYaw: -3,
-                    //     targetPitch: -6,
-                    //     targetHfov: 80
-                    // },
                     {
                         pitch: -1,
                         yaw: 7,
@@ -75,7 +55,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Bedroom1_1.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Bedroom1_1.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: -2,
@@ -121,7 +101,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Bedroom2_1.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Bedroom2_1.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: 10,
@@ -161,7 +141,7 @@ export const TOUR_CONFIG = {
                 pitch: -2,
                 yaw: -35,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Passage_1.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Passage_1.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: -2,
@@ -222,7 +202,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Toilet.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Toilet.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: 10,
@@ -252,7 +232,7 @@ export const TOUR_CONFIG = {
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/Bathroom.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/Bathroom.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: 10,
@@ -280,39 +260,31 @@ export const TOUR_CONFIG = {
     },
     2: {
         default: {
-            firstScene: "livingRoom",
+            firstScene: "corporate",
         },
         scenes: {
-            livingRoom: {
+            corporate: {
                 title: "Living Room",
                 hfov: 80,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/corporate_apartment.jpg",
-                // hotSpots: [
-                //     {
-                //         pitch: 3,
-                //         yaw: 80,
-                //         type: "info",
-                //         text: "Spaced Corporate Appartement",
-                //     },
-                // ],
+                panorama: ASSETS_BASE_URL+`/rendered/corporate_apartment.jpg?v=${Date.now()}`,
             }
         }
     },
     3: {
         default: {
-            firstScene: "livingRoom",
+            firstScene: "modern",
         },
         scenes: {
-            livingRoom: {
+            modern: {
                 title: "Living Room",
                 hfov: 80,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/modern_apartment.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/modern_apartment.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: -3,
@@ -326,16 +298,16 @@ export const TOUR_CONFIG = {
     },
     4: {
         default: {
-            firstScene: "livingRoom",
+            firstScene: "tinyapartment",
         },
         scenes: {
-            livingRoom: {
+            tinyapartment: {
                 title: "Living Room",
                 hfov: 80,
                 pitch: 0,
                 yaw: 0,
                 type: "equirectangular",
-                panorama: ASSETS_BASE_URL+"/rendered/tiny_apartement.jpg",
+                panorama: ASSETS_BASE_URL+`/rendered/tiny_apartement.jpg?v=${Date.now()}`,
                 hotSpots: [
                     {
                         pitch: 3,
@@ -349,10 +321,10 @@ export const TOUR_CONFIG = {
     },
     5: {
         default: {
-            firstScene: "livingRoom",
+            firstScene: "newone",
         },
         scenes: {
-            livingRoom: {
+            newone: {
                 title: "Living Room",
                 hfov: 80,
                 pitch: 0,
@@ -372,10 +344,10 @@ export const TOUR_CONFIG = {
     },
     6: {
         default: {
-            firstScene: "livingRoom",
+            firstScene: "oldone",
         },
         scenes: {
-            livingRoom: {
+            oldone: {
                 title: "Living Room",
                 hfov: 80,
                 pitch: 0,

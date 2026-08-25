@@ -1946,3 +1946,334 @@ html, body, #root {
   .arp__mobile-prompt { background: #1a1a1c; border-color: #2c2c30; border-left-color: #4ade80; }
   .arp__footnotes { border-color: #2c2c30; }
 }
+
+/* Css for 2d-plan */
+.rg {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 16px 72px;
+  color: #1c1c1a;
+}
+
+.rg__head h1 {
+  margin: 0 0 4px;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.rg__summary {
+  margin: 0 0 2px;
+  color: #57564f;
+  font-size: 1rem;
+}
+
+.rg__count {
+  margin: 0;
+  color: #8a8880;
+  font-size: 0.875rem;
+}
+
+/* Sticky room nav — the 2D analogue of the tour's scene hotspots. */
+.rg__nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 6px;
+  margin: 20px -16px 24px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: #fffefb;
+  border-bottom: 1px solid #e6e3db;
+}
+
+.rg__nav::-webkit-scrollbar { display: none; }
+
+.rg__navbtn {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 0 15px;
+  border: 1px solid #dcd9d1;
+  border-radius: 999px;
+  background: transparent;
+  color: #57564f;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.rg__navbtn:hover { border-color: #1c1c1a; color: #1c1c1a; }
+
+.rg__room { margin-bottom: 40px; scroll-margin-top: 68px; }
+
+.rg__roomhead { margin-bottom: 12px; max-width: 56ch; }
+
+.rg__roomhead h2 {
+  margin: 0 0 3px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.rg__roomhead p {
+  margin: 0;
+  color: #57564f;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+/* First photo in a room spans two columns — property portals lead with a
+   hero shot, and matching that keeps the control condition realistic. */
+.rg__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rg__grid > li:first-child { grid-column: 1 / -1; }
+
+.rg__thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f1efe8;
+  cursor: zoom-in;
+}
+
+.rg__thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.rg__grid > li:first-child .rg__thumb img { aspect-ratio: 16 / 9; }
+
+/* ---- Lightbox ---- */
+
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0b0c;
+}
+
+.lb__img {
+  max-width: 100%;
+  max-height: 100dvh;
+  object-fit: contain;
+}
+
+.lb__close,
+.lb__nav {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.14);
+  color: #fff;
+  cursor: pointer;
+}
+
+.lb__close {
+  top: calc(12px + env(safe-area-inset-top));
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+}
+
+.lb__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.lb__nav--prev { left: 10px; }
+.lb__nav--next { right: 10px; }
+
+.lb__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px calc(14px + env(safe-area-inset-bottom));
+  color: #f4f2ee;
+  font-size: 0.875rem;
+  background: linear-gradient(transparent, rgb(0 0 0 / 0.6));
+}
+
+.lb__count { font-variant-numeric: tabular-nums; }
+
+.rg__thumb:focus-visible,
+.rg__navbtn:focus-visible,
+.lb__close:focus-visible,
+.lb__nav:focus-visible {
+  outline: 2px solid #378add;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rg { scroll-behavior: auto; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .rg { color: #f4f2ee; }
+  .rg__summary, .rg__roomhead p { color: #a8a69e; }
+  .rg__nav { background: #141416; border-color: #2c2c30; }
+  .rg__navbtn { border-color: #3a3a3e; color: #a8a69e; }
+  .rg__navbtn:hover { border-color: #f4f2ee; color: #f4f2ee; }
+  .rg__thumb { background: #232326; }
+}
+/* CSS for 2d-plan end here */
+
+
+/* Media carouseal */
+/*
+ * The carousel fills its parent. It sets no height of its own, so the parent
+ * must have one — a percentage height inside an auto-height parent collapses
+ * to zero and nothing renders.
+ */
+
+.pc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #1a1a1c;
+  touch-action: pan-y;
+}
+
+.pc:focus-visible {
+  outline: 2px solid #378add;
+  outline-offset: 2px;
+}
+
+.pc__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Scrim is sized to the text block rather than the frame, so the photograph
+   stays undimmed above it. */
+.pc__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 34px clamp(14px, 4%, 24px) clamp(14px, 4%, 20px);
+  background: linear-gradient(transparent, rgb(10 10 12 / 0.78));
+  color: #fff;
+  pointer-events: none;
+}
+
+.pc__title {
+  margin: 0 0 2px;
+  font-size: clamp(0.95rem, 2.4vw, 1.15rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 0.4);
+}
+
+.pc__caption {
+  margin: 0;
+  max-width: 52ch;
+  font-size: clamp(0.8rem, 1.9vw, 0.9375rem);
+  line-height: 1.45;
+  opacity: 0.92;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 0.4);
+}
+
+.pc__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(20 20 22 / 0.5);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.pc__nav:hover { background: rgb(20 20 22 / 0.72); }
+
+.pc__nav--prev { left: 8px; }
+.pc__nav--next { right: 8px; }
+
+.pc__dots {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  gap: 5px;
+}
+
+.pc__dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.45);
+  cursor: pointer;
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.pc__dot.is-active {
+  background: #fff;
+  transform: scale(1.35);
+}
+
+.pc__nav:focus-visible,
+.pc__dot:focus-visible {
+  outline: 2px solid #7fb2ff;
+  outline-offset: 3px;
+}
+
+/* Small frames: shrink the controls rather than letting them cover the photo,
+   and drop the dots once they'd crowd the corner. */
+@container (max-width: 380px) {
+  .pc__nav { width: 34px; height: 34px; font-size: 1.25rem; }
+  .pc__dots { display: none; }
+}
+
+@media (max-width: 380px) {
+  .pc__nav { width: 34px; height: 34px; font-size: 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pc__nav, .pc__dot { transition: none; }
+}
+/* Carouseal css end ghere */

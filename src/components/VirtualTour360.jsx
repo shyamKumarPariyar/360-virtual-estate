@@ -31,8 +31,8 @@ const VirtualTour360 = () => {
     return (
         <>
             <ReactPannellum
-                key={currentSceneId}
-                id={`apartment-tour-${currentSceneId}`}
+                key={`${id}-${currentSceneId}-${currentScene.panorama}`}
+                id={`apartment-tour-${id}-${currentSceneId}`}
                 sceneId={currentSceneId}
                 imageSource={currentScene.panorama}
                 config={{
@@ -46,7 +46,9 @@ const VirtualTour360 = () => {
                     showZoomCtrl: true,
                     showFullscreenCtrl: true,
                 }}
-                onPanoramaLoaded={() => setLoaded(true)}
+                onPanoramaLoaded={() => {
+                    setLoaded(true);
+                }}
                 style={{ width: "100%", height: "100%" }}
             >
                 <TourToolbar loaded={loaded} />

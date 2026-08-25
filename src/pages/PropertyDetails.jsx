@@ -6,6 +6,8 @@ import { createXRStore } from "@react-three/xr";
 import CanvasComponent from "../components/common/CanvasComponent";
 import VirtualTour360 from "../components/VirtualTour360";
 import InfoBox from "../components/common/InfoBox";
+import { PROPERTY_2D } from "../data/photos";
+import PhotoCarousel from "../components/2d-plan/Photocarousel";
 
 const xrStore = createXRStore({ emulate: true })
 
@@ -35,7 +37,8 @@ const PropertyDetails = () => {
 
             <section className="detail-hero wrap">
                 <div className="detail-tabs">
-                    <button className={`detail-tab ${activeTab === "tour" ? "detail-tab--active" : ""}`} onClick={() => setActiveTab("tour")}>360° Tour</button>
+                    <button className={`detail-tab ${activeTab === "2d-plan" ? "detail-tab--active" : ""} ${!property.plan ? "detail-tab--disabled" : ""}`} onClick={() => setActiveTab("2d-plan")} disabled={!property.plan}>2D-Plan</button>
+                    <button className={`detail-tab ${activeTab === "tour" ? "detail-tab--active" : ""}`} onClick={() => setActiveTab("tour")} disabled={!property.ar}>360° Tour</button>
                     {/* <button
                         className={`detail-tab ${activeTab === "ar" ? "detail-tab--active" : ""} ${!property.ar ? "detail-tab--disabled" : ""}`}
                         onClick={() => property.ar && setActiveTab("ar")}
@@ -51,6 +54,18 @@ const PropertyDetails = () => {
                         VR Walkthrough
                     </button>
                 </div>
+
+                {activeTab === "2d-plan" && (
+                    <>
+                        {/* <InfoBox text={'Drag to look around · click a marker to move rooms'} /> */}
+                        <div className="detail-pano">
+                            <PhotoCarousel 
+                                photos={PROPERTY_2D[1].items}
+                            />
+                        </div>
+                    </>
+                    
+                ) }
 
                 {activeTab === "tour" && (
                     <>
