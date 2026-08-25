@@ -62,7 +62,7 @@ const CanvasComponent = ({model}) => {
 			moveSpeed: { value: 0.5, min: 0.5, max: 8, step: 0.5 },
 			lookSpeed: { value: 0.003, min: 0.0005, max: 0.008, step: 0.0005 },
 			collisionBuffer: { value: 0.9, min: 0.1, max: 1, step: 0.1 },
-			pitchLimitDeg: { value: 20, min: 10, max: 90, step: 10 }, // how far up/down you can look, in degrees
+			pitchLimitDeg: { value: 60, min: 10, max: 90, step: 10 }, // how far up/down you can look, in degrees
 		}),
 		'Wall Clearance': folder({
 			wallClearance: { value: 0.6, min: 0.1, max: 1.5, step: 0.05 },
