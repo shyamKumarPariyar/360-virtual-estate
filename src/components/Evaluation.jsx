@@ -10,7 +10,7 @@ const Evaluation = () => {
             </div>
             <ul className="eval-list">
                 <li><span className="eval-mark">01</span>Usability tested with real participants</li>
-                <li><span className="eval-mark">02</span>Compared across all three XR modules</li>
+                <li><span className="eval-mark">02</span>Compared across three immersive modules and a standard 2D listing</li>
                 <li><span className="eval-mark">03</span>Measured against confidence in the final decision</li>
             </ul>
             </div>

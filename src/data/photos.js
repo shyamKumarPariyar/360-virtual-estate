@@ -7,7 +7,7 @@ export const PROPERTY_2D = {
         summary: '2 bed · 1 bath · 68 m²',
         items: [
             { src: `${ASSETS_BASE_URL}/2d-rendered/livingroom_1.jpg`, kind: 'photo', room: 'Living Room', alt: 'Living room looking toward the television wall' },
-            { src: `${ASSETS_BASE_URL}/2d-rendered/livingroom_2.jpg`, kind: 'photo', room: 'Living Room', alt: 'Living room looking toward the kitchen' },
+            { src: `${ASSETS_BASE_URL}/2d-rendered/livingroom_2.jpg`, kind: 'photo', room: 'Living Room', alt: 'Living room looking toward the passage' },
             { src: `${ASSETS_BASE_URL}/2d-rendered/livingroom_3.jpg`, kind: 'photo', room: 'Living Room',     alt: 'Kitchen counter and appliances' },
             { src: `${ASSETS_BASE_URL}/2d-rendered/bedroom1.jpg`, kind: 'photo', room: 'Bedroom 1',   alt: 'Main bedroom from the doorway' },
             { src: `${ASSETS_BASE_URL}/2d-rendered/bedroom2.jpg`, kind: 'photo', room: 'Bedroom 2',   alt: 'Second bedroom from the doorway' },

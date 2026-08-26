@@ -3,7 +3,7 @@ import { canOfferAR } from '../../hooks/device';
 
 const handheld = canOfferAR();
 
-export default function FurnitureCard({ item, ready, allowResize = false, onEvent }) {
+export default function FurnitureCard({ item, ready, onEvent }) {
 	const viewerRef = useRef(null);
 	const enteredAt = useRef(null);
 	const [canAR, setCanAR] = useState(false);
@@ -127,8 +127,8 @@ export default function FurnitureCard({ item, ready, allowResize = false, onEven
 			)}
 		</div>
 
-		<div className="fl__meta">
-			<strong>{item.name}</strong>
+		<div className="fl__meta ar-card-body">
+			<h4 style={{color: '#fff'}}>{item.name}</h4>
 			{/* <span className="fl__dims">
 			{item.dimensions.w} × {item.dimensions.d} × {item.dimensions.h} m
 			</span> */}

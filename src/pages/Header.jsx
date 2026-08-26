@@ -1,5 +1,4 @@
-import React from 'react'
-import Secene from '../components/common/Secene'
+
 import SearchCard from '../components/common/SearchCard'
 
 const Header = () => {
@@ -18,9 +17,7 @@ const Header = () => {
                         <p className="eyebrow">FIND A HOME, THEN STEP INSIDE IT</p>
                         <h1 className="h1">Search the market. Walk through the shortlist.</h1>
                         <p className="lead">
-                            Every listing on Parallax comes with a 360° tour, AR customization
-                            and a full VR walkthrough — so you can search like any portal,
-                            but decide with far more confidence.
+                            Every listing on Parallax comes with a 360° virtual tour, a full 3D walkthrough and AR visualisation — so you can search like any portal, then find out what the photographs left out before you spend a Saturday on a viewing..
                         </p>
                         <SearchCard />
                     </div>

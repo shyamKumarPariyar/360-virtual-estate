@@ -3,7 +3,7 @@ const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com'
 
 export const modules = [
     { id: "tour", link: '/property/1', tag: "360°", title: "Virtual Tours", body: "Walk every room at your own pace, before you book a viewing.", cta: "Browse tours" },
-    { id: "ar", link: '/ar', tag: "AR", title: "Customization", body: "Swap flooring, paint and furniture, at true scale, in the actual room.", cta: "Try customizing" },
+    { id: "ar", link: '/ar', tag: "AR", title: "Visualization", body: "Scan the ground, then walk the house at full scale — no viewing required.", cta: "Step into it" },
     { id: "vr", link: '/property/1', tag: "VR", title: "Walkthroughs", body: "Step inside with a headset for a full-scale spatial walkthrough.", cta: "Start a walkthrough" },
 ];
 
@@ -15,9 +15,10 @@ export const discover = [
 
 export const process = [
     { step: "01", label: "Capture", body: "The property is scanned into a navigable 360° tour." },
-    { step: "02", label: "Customize", body: "The buyer adjusts finishes and furniture in AR." },
+    { step: "02", label: "Look Around", body: "Every room is explored in 360°, at the buyer's own pace." },
     { step: "03", label: "Walk Through", body: "The customized space is explored in VR, full scale." },
-    { step: "04", label: "Decide", body: "With a clearer picture, the buyer moves forward with confidence." },
+    { step: "04", label: "Pace It Out", body: "The property is placed on real ground and walked in person." },
+    { step: "05", label: "Decide", body: "With a clearer picture, the buyer moves forward with confidence." },
 ];
 
 export const scenes = [

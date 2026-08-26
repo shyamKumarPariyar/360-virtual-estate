@@ -1074,7 +1074,7 @@ html, body, #root {
 /* process */
 .process-grid { 
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 1.4rem;
 }
 .step-num { 
@@ -2277,3 +2277,251 @@ html, body, #root {
   .pc__nav, .pc__dot { transition: none; }
 }
 /* Carouseal css end ghere */
+
+
+/* New AR Page */
+
+.ar-hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.ar-hero-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.ar-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(90deg,#050b18 18%,rgba(5,11,24,.75) 45%,rgba(5,11,24,.15) 75%);
+}
+
+.ar-hero-content{
+	background:#060b18;
+    color:white;
+    font-family:Inter,sans-serif;
+    position:relative;
+    z-index:10;
+    width:55%;
+    padding-left:8%;
+}
+
+.ar-tag{
+    display:inline-block;
+    background:#19315f;
+    color:#7EB2FF;
+    padding:8px 14px;
+    font-family:Inter,sans-serif;
+    border-radius:30px;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+.ar-hero h1{
+    margin:25px 0;
+    font-size:68px;
+    line-height:1.05;
+    font-weight:800;
+}
+
+.ar-hero h1 span{
+    color:#4F7CFF;
+}
+
+.ar-hero p{
+
+    font-family:Inter,sans-serif;
+    font-size:18px;
+    color:#D2D7E7;
+    line-height:1.8;
+    max-width:600px;
+}
+
+.ar-hero-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin-top:45px;
+}
+
+.ar-hero-features div{
+    display:flex;
+    align-items:center;
+
+    font-family:Inter,sans-serif;
+    gap:15px;
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.ar-hero-features svg{
+    color:#4F7CFF;
+	
+}
+
+/* ASSETS */
+
+.ar-assets-section{
+    font-family:Inter,sans-serif;
+    padding:100px 8%;
+    background:#F5F8FF;
+    color:#101828;
+}
+
+.ar-section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    font-family:Inter,sans-serif;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.ar-section-head h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.ar-section-head p{
+    font-family:Inter,sans-serif;
+    color:#667085;
+    max-width:600px;
+    line-height:1.7;
+}
+
+/* GRID */
+
+.ar-model-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:28px;
+}
+
+.ar-model-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 18px 45px rgba(15,23,42,.08);
+    transition:.35s;
+}
+
+.ar-model-card:hover{
+    transform:translateY(-10px);
+}
+
+.ar-model-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.ar-card-body{
+    padding:22px;
+}
+
+.ar-type{
+    color:#245BFF;
+    background:#EDF3FF;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.ar-card-body h3{
+    margin:18px 0;
+    font-size:22px;
+	color: fff;
+}
+
+.ar-info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+    color:#667085;
+    margin-bottom:20px;
+}
+
+.ar-info-grid div{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.ar-view-btn{
+    width:100%;
+    border:none;
+    padding:15px;
+    border-radius:14px;
+    cursor:pointer;
+    background: var(--brass);
+    color: var(--ink);
+    font-family: var(--fm);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+	.ar-hero{
+		height:auto;
+		min-height:100vh;
+	}
+
+	.ar-hero-content{
+		width:100%;
+		padding:120px 6% 80px;
+	}
+
+	.ar-hero h1{
+		font-size:52px;
+	}
+
+	.ar-hero-features{
+		grid-template-columns:1fr;
+	}
+
+	.ar-section-head{
+		align-items:flex-start;
+	}
+
+}
+
+@media(max-width:600px){
+
+	.ar-hero h1{
+		font-size:38px;
+	}
+
+	.ar-hero p{
+		font-size:16px;
+	}
+
+	.ar-assets-section{
+		padding:70px 5%;
+	}
+
+	.ar-section-head h2{
+		font-size:30px;
+	}
+
+	.ar-model-card img{
+		height:180px;
+	}
+
+}
+/* New AR Page css end here */

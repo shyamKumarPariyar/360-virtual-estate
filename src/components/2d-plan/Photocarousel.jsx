@@ -62,12 +62,12 @@ export default function PhotoCarousel({ photos = [], start = 0, onChange }) {
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
         >
-        <img className="pc__img" src={photo.src} alt={photo.alt ?? photo.caption ?? ''} />
+        <img className="pc__img" src={photo.src} alt={photo.alt} />
 
-        {(photo.title || photo.caption) && (
+        {(photo.room || photo.alt) && (
             <div className="pc__overlay">
-            {photo.title && <h3 className="pc__title">{photo.title}</h3>}
-            {photo.caption && <p className="pc__caption">{photo.caption}</p>}
+            {photo.room && <h3 className="pc__room">{photo.room}</h3>}
+            {photo.alt && <p className="pc__alt">{photo.alt}</p>}
             </div>
         )}
 

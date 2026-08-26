@@ -10,7 +10,7 @@ const PropertyCard = ({p, delay}) => {
     return (
         <Reveal as="div" className="prop-card" delay={delay}>
              
-            <div className="prop-photo cursor-pointer" style={{ backgroundImage: `url(${scenes[p.scene].url})` }} onClick={() => navigate(`/property/${p.id}`)}>
+            <div className="prop-photo " style={{ backgroundImage: `url(${scenes[p.scene].url})` }} >
                 {p.tag && <span className={`prop-tag prop-tag--${p.tag.toLowerCase().replace(" ", "-")}`}>{p.tag}</span>}
                 <button
                     className={`prop-save ${saved ? "prop-save--on" : ""}`}
@@ -20,6 +20,7 @@ const PropertyCard = ({p, delay}) => {
                 {saved ? "♥" : "♡"}
                 </button>
                 <div className="prop-xr-badges">
+                {p.plan && <span className="prop-xr-badge">2D</span>}
                 <span className="prop-xr-badge">360°</span>
                 {/* {p.ar && <span className="prop-xr-badge">AR</span>} */}
                 {p.vr && <span className="prop-xr-badge">VR</span>}
@@ -34,9 +35,7 @@ const PropertyCard = ({p, delay}) => {
                 <span>·</span>
                 <span>{p.baths} bath</span>
                 </div>
-                <Link to={`/property/${p.id}`} className="prop-cta">
-                Start virtual tour
-                </Link>
+                <Link to={`/property/${p.id}`} className="prop-cta"> Start virtual tour → </Link>
                 {/* <span className="prop-cta" href="#cta">Start virtual tour →</span> */}
             </div>
         </Reveal>
