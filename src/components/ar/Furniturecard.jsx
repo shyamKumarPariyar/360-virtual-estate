@@ -128,7 +128,7 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 		</div>
 
 		<div className="fl__meta ar-card-body">
-			<h4 style={{color: '#fff'}}>{item.name}</h4>
+			<strong style={{color: '#fff'}}>{item.name}</strong>
 			{/* <span className="fl__dims">
 			{item.dimensions.w} × {item.dimensions.d} × {item.dimensions.h} m
 			</span> */}
