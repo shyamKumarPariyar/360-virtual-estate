@@ -51,7 +51,7 @@ const PropertyDetails = () => {
                         onClick={() => property.vr && setActiveTab("vr") && xrStore.enterVR()}
                         disabled={!property.vr}
                     >
-                        VR Walkthrough
+                        3D Walkthrough
                     </button>
                 </div>
 

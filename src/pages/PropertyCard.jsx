@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { scenes } from "../data/homeConstant";
 import Reveal from "../components/Reveal";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PropertyCard = ({p, delay}) => {
     const [saved, setSaved] = useState(false);
-    const navigate = useNavigate()
-
     return (
         <Reveal as="div" className="prop-card" delay={delay}>
              
@@ -36,7 +34,6 @@ const PropertyCard = ({p, delay}) => {
                 <span>{p.baths} bath</span>
                 </div>
                 <Link to={`/property/${p.id}`} className="prop-cta"> Start virtual tour → </Link>
-                {/* <span className="prop-cta" href="#cta">Start virtual tour →</span> */}
             </div>
         </Reveal>
     );

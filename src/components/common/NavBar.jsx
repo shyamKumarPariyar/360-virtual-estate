@@ -26,7 +26,9 @@ const NavBar = () => {
                 <Link to='/about-us' >About Us</Link>
                 </li> */}
                 <li><a href="/property/1" onClick={() => setNavOpen(false)}>Start a Tour</a></li>
-                <li onClick={() => setNavOpen(false)}><ARNavButton /></li>
+                <li><a href="/vr" onClick={() => setNavOpen(false)}>VR Walkthrough</a></li>
+                <li><a href="/ar" onClick={() => setNavOpen(false)}>AR Visualization</a></li>
+                {/* <li onClick={() => setNavOpen(false)}><ARNavButton /></li> */}
             </ul>
             <button
                 className={`nav-toggle ${navOpen ? "nav-toggle--open" : ""}`}

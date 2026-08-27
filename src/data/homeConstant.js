@@ -4,7 +4,7 @@ const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com'
 export const modules = [
     { id: "tour", link: '/property/1', tag: "360°", title: "Virtual Tours", body: "Walk every room at your own pace, before you book a viewing.", cta: "Browse tours" },
     { id: "ar", link: '/ar', tag: "AR", title: "Visualization", body: "Scan the ground, then walk the house at full scale — no viewing required.", cta: "Step into it" },
-    { id: "vr", link: '/property/1', tag: "VR", title: "Walkthroughs", body: "Step inside with a headset for a full-scale spatial walkthrough.", cta: "Start a walkthrough" },
+    { id: "vr", link: '/vr', tag: "VR", title: "Walkthroughs", body: "Step inside with a headset for a full-scale spatial walkthrough.", cta: "Start a walkthrough" },
 ];
 
 export const discover = [
