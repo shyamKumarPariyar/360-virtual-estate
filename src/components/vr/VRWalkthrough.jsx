@@ -6,6 +6,7 @@ import { Apartment } from './Apartment';
 import { Raycaster, Vector3 } from 'three';
 import TeleportFloor from './TeleportFloor';
 import { GrabRotate } from './GrabRotate';
+import Background from './Background';
 
 const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com/models/apartment.glb'
 
@@ -175,7 +176,7 @@ const VRWalkthrough = ({modelUrl = ASSETS_BASE_URL, title = 'Apartment walkthrou
                         <XROrigin ref={originRef} />
                         <ambientLight intensity={0.5} />
                         <directionalLight position={[10, 10, 5]} />
-            
+                        <Background timeOfDay="day" groundY={bounds?.minY ?? 0} />
                         <Apartment url={modelUrl} onBounds={handleBounds} />
                         <GrabRotate originRef={originRef} hand="right" />
                         {bounds && (
