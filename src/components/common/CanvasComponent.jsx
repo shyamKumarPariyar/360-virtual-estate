@@ -98,7 +98,7 @@ const CanvasComponent = ({model}) => {
 			)}
 
 			<div
-				hidden={isTouchDevice}
+				// hidden={isTouchDevice}
 				style={{
 					position: 'absolute',
 					bottom: 4,
