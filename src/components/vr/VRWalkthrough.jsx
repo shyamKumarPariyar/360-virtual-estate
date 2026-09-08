@@ -7,8 +7,9 @@ import { Raycaster, Vector3 } from 'three';
 import TeleportFloor from './TeleportFloor';
 import { GrabRotate } from './GrabRotate';
 import Background from './Background';
+import ApartmentInteractions from './ApartmentInteractions';
 
-const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com/models/apartment.glb'
+const ASSETS_BASE_URL = 'https://360-virtual-estate.s3.eu-north-1.amazonaws.com/models/apartment-tvs.glb'
 
 const store = createXRStore({
     hand: { teleportPointer: true },
@@ -180,6 +181,8 @@ const VRWalkthrough = ({modelUrl = ASSETS_BASE_URL, title = 'Apartment walkthrou
                         <Apartment url={modelUrl} onBounds={handleBounds} />
                         <GrabRotate originRef={originRef} hand="right" />
                         {bounds && (
+                            <>
+                            <ApartmentInteractions meshes={bounds.meshes} />
                             <TeleportFloor
                                 width={bounds.size.x}
                                 depth={bounds.size.z}
@@ -187,6 +190,7 @@ const VRWalkthrough = ({modelUrl = ASSETS_BASE_URL, title = 'Apartment walkthrou
                                 y={bounds.minY + 0.01}
                                 onTeleport={handleTeleport}
                             />
+                            </>
                         )}
                     </XR>
                 </Canvas>

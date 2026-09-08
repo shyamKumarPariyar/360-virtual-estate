@@ -31,7 +31,7 @@ export const scenes = [
 ];
 
 export const properties = [
-    { id: 1, price: "£450,000", type: "2 bed semi-detached house", place: "Clapham, London", beds: 2, baths: 2, tag: "NEW", floorLevel: 0, cameraFacing: 107, camera: {x: 1.55, y: 1.2, z: 2.35}, scene: 0, ar: true, vr: true, plan: true, model: ASSETS_BASE_URL+'/models/apartment.glb' },
+    { id: 1, price: "£450,000", type: "2 bed semi-detached house", place: "Clapham, London", beds: 2, baths: 2, tag: "NEW", floorLevel: 0, cameraFacing: 107, camera: {x: 1.55, y: 1.2, z: 2.35}, scene: 0, ar: true, vr: true, plan: true, model: ASSETS_BASE_URL+'/models/apartment-tvs.glb' },
     { id: 2, price: "£895,000", type: "corporate apartment", place: "Chorlton, Manchester", beds: 4, baths: 3, tag: "REDUCED", floorLevel: 0, cameraFacing: 107, camera: {x: 0, y: 25, z: 0}, scene: 1, ar: true, vr: true, plan: false, model: ASSETS_BASE_URL+'/models/corporate_apartment.glb' },
     { id: 3, price: "£310,000", type: "1 bed open space apartment", place: "Leith, Edinburgh", beds: 1, baths: 1, tag: null, floorLevel: 0.05, cameraFacing: 107, camera: {x: 0, y: 1.5, z: 0}, scene: 2, ar: false, vr: true, plan: false, model: ASSETS_BASE_URL+'/models/modern_apartment.glb' },
     { id: 4, price: "£50,000", type: "Loft living room", place: "The Cotswolds", beds: 5, baths: 4, tag: "NEW", floorLevel: 0, cameraFacing: 107, camera: {x: 0, y: 1, z: 0}, scene: 3, ar: true, vr: true, plan: false, model: ASSETS_BASE_URL+'/models/loft_13_living_room_interior.glb' },
@@ -39,4 +39,32 @@ export const properties = [
     { id: 6, price: "£540,000", type: "3 bed terraced house", place: "Clifton, Bristol", beds: 3, baths: 2, tag: null, floorLevel: 0, cameraFacing: 107, camera: {x: 2, y: 1, z: 2}, scene: 5, ar: true, vr: false, plan: false },
 ];
 
+export const INTERACTIONS = [
+    {
+        id: 'tv-living',
+        type: 'screen',
+        label: 'TV',
+        position: [-3.35, 1.12, 3.42],
+        mesh: /^tv-screen$/i,
+        video: ASSETS_BASE_URL+'/video/tv-living.mp4',
+        glowPosition: [-3.25, 1.57, 3.45],
+        glowColour: '#7fb2ff',
+        glowIntensity: 3,
+        defaultOn: false,
+    },
+    {
+        id: 'tv-bedroom',
+        type: 'screen',
+        label: 'TV',
+        position: [1.12, 0.99, -2.605],
+        mesh: /^bed-tv-screen$/i,
+        video: ASSETS_BASE_URL+'/video/tv-bedroom.mp4',
+        glowPosition: [1.12, 1.4, -2.42],
+        glowColour: '#9fb8ff',
+        glowIntensity: 2.5,
+        defaultOn: false,
+    },
+];
+
 export const filters = ["All", "Houses", "Flats", "New builds"];
+export const FLOOR_LEVEL = -0.01;

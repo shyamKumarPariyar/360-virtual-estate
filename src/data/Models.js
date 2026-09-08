@@ -5,7 +5,7 @@ export const MODELS = [
 		name: 'Modern Appartement',
 		category: 'Housing',
 		thumbnail: ASSETS_BASE_URL+'/thumbs/apartment.png',
-		glb: ASSETS_BASE_URL+'/models/apartment.glb',
+		glb: ASSETS_BASE_URL+'/models/apartment-tvs.glb',
 		usdz: ASSETS_BASE_URL+'/usdz/apartment_1.usdz',
 		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
 		placement: 'floor',
