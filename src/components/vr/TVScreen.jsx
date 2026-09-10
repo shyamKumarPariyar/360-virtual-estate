@@ -16,6 +16,20 @@ const TVScreen = ({ meshes, match, src, playing, onEvent }) => {
         el.playsInline = true;    // depends on both being set this way
         el.crossOrigin = 'anonymous';
         el.preload = 'auto';
+        el.setAttribute('playsinline', '');
+        el.setAttribute('webkit-playsinline', '');
+        el.style.cssText = [
+            'position:fixed',
+            'top:0',
+            'left:0',
+            'width:1px',
+            'height:1px',
+            'opacity:0',
+            'z-index:-1',
+            'pointer-events:none',
+        ].join(';');
+        el.setAttribute('aria-hidden', 'true');
+        el.setAttribute('tabindex', '-1');
         document.body.appendChild(el);
         video.current = el;
     
