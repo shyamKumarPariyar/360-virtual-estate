@@ -80,7 +80,7 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 				alt={item.name}
 				scale= {item.scale}
 				ar
-				ar-modes="webxr quick-look"
+				ar-modes="scene-viewer quick-look"
 				ar-placement="floor"
 				ar-scale="fixed"
 
@@ -94,7 +94,7 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 				environment-image="neutral"
 
 				interaction-prompt="auto"
-				loading="eager"
+				loading="lazy"
 				style={{ width: '100%', height: '100%', backgroundColor: 'transparent' }}
 			>
 				<div slot="ar-button" style={{ display: 'none' }} />
@@ -103,6 +103,8 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 			) : (
 			<img className="fl__poster" src={item.thumbnail} alt={item.thumbnail} loading="lazy" />
 			)}
+
+			<span className="fl__area">{item.area}</span>
 
 			{handheld && canAR && (
 				<button className="fl__ar" onClick={launchAR} aria-label={`View ${item.name} in your room`}>

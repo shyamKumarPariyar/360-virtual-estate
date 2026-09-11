@@ -1,4 +1,4 @@
-import ARModelGrid from "../components/ar/ARMOdelGrid";
+import ARModelGrid from "../components/ar/ARModelGrid";
 import HeroAR from "../components/ar/HeroAR";
 
 export default function ARPage() {
