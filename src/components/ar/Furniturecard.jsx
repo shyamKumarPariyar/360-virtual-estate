@@ -104,8 +104,6 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 			<img className="fl__poster" src={item.thumbnail} alt={item.thumbnail} loading="lazy" />
 			)}
 
-			<span className="fl__area">{item.area}</span>
-
 			{handheld && canAR && (
 				<button className="fl__ar" onClick={launchAR} aria-label={`View ${item.name} in your room`}>
 					<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -131,9 +129,9 @@ export default function FurnitureCard({ item, ready, onEvent }) {
 
 		<div className="fl__meta ar-card-body">
 			<strong style={{color: '#fff'}}>{item.name}</strong>
-			{/* <span className="fl__dims">
-			{item.dimensions.w} × {item.dimensions.d} × {item.dimensions.h} m
-			</span> */}
+			<span className="fl__dims">
+			({item.dimensions.w} × {item.dimensions.d} × {item.dimensions.h}) m
+			</span>
 			{failed && <span className="fl__error">Model failed to load</span>}
 		</div>
 		</li>

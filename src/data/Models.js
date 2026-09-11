@@ -7,7 +7,7 @@ export const MODELS = [
 		thumbnail: ASSETS_BASE_URL+'/thumbs/apartment.png',
 		glb: ASSETS_BASE_URL+'/models/apartment-tvs.glb',
 		usdz: ASSETS_BASE_URL+'/usdz/apartment_1.usdz',
-		dimensions: { w: 2.1, d: 0.9, h: 0.85 },
+		dimensions: { w: 3.1, d: 5.9, h: 3.55 },
 		placement: 'floor',
 		scale: '0.7 0.7 0.7'
 	},
@@ -40,7 +40,7 @@ export const MODELS = [
 		thumbnail: ASSETS_BASE_URL+'/thumbs/interior_4_living_room_kitchen.png',
 		glb: ASSETS_BASE_URL+'/models/interior_4_living_room_kitchen.glb',
 		usdz: ASSETS_BASE_URL+'/usdz/interior_4_living_room_kitchen.usdz',
-		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
+		dimensions: { w: 2.8, d: 3.9, h: 0.75 },
 		placement: 'floor',
 		scale: '0.85 0.85 0.85'
 	},
@@ -73,7 +73,7 @@ export const MODELS = [
 		thumbnail: ASSETS_BASE_URL+'/thumbs/simple_house_kitchen.png',
 		glb: ASSETS_BASE_URL+'/models/simple_house_kitchen.glb',
 		usdz: ASSETS_BASE_URL+'/usdz/simple_house_kitchen.usdz',
-		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
+		dimensions: { w: 1.8, d: 1.9, h: 0.75 },
 		placement: 'floor',
 		scale: '0.45 0.45 0.45'
 	},
@@ -84,7 +84,7 @@ export const MODELS = [
 		thumbnail: ASSETS_BASE_URL+'/thumbs/loft_13_living_room_interior.png',
 		glb: ASSETS_BASE_URL+'/models/loft_13_living_room_interior.glb',
 		usdz: ASSETS_BASE_URL+'/usdz/loft_13_living_room_interior.usdz',
-		dimensions: { w: 1.8, d: 0.9, h: 0.75 },
+		dimensions: { w: 1.8, d: 2.6, h: 0.75 },
 		placement: 'floor',
 		scale: '1 1 1'
 	},
