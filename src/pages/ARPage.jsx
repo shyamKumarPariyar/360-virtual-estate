@@ -6,7 +6,6 @@ export default function ARPage() {
     <main className="ar-page">
 
       <HeroAR/>
-
       <ARModelGrid filter="Housing" allowResize />
 
     </main>
