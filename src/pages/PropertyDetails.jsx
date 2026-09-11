@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { scenes } from "../data/homeConstant";
 import { getPropertyById } from "../utils/propertyUtils";
@@ -16,6 +16,13 @@ const PropertyDetails = () => {
     const property = getPropertyById(id);
     const [activeTab, setActiveTab] = useState("tour");
 
+    useEffect(() => {
+        if(parseInt(id) === 1) {
+            setActiveTab('2d-plan')
+        }
+    },[id])
+    // console.log("Active Tab", activeTab)
+
     if (!property) {
         return (
         <div className="pxl-page">
@@ -28,6 +35,8 @@ const PropertyDetails = () => {
     }
 
     const scene = scenes[property.scene];
+
+
 
     return (
         <div className="pxl-page">
